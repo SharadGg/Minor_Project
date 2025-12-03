@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+.pyd
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+myvenv/
+.venv/
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Dataset and results
+data/raw/
+data/processed/
+results/
+checkpoints/
+
+# Python env configuration
+.env
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore compiled models/binaries created by builds
+*.dll
+*.lib
+
+# Keep model files under version control? Exclude if you prefer them handled by LFS or external storage
+# MobileNetSSD_deploy.caffemodel  # <-- keep if you want this in the repo (it's ~22MB - safe to keep)
+

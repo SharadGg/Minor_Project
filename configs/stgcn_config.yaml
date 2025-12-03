@@ -1,0 +1,142 @@
+# ============================================
+# CPU-OPTIMIZED CONFIGURATION
+# For Intel i3-1115G4, 8GB RAM, No GPU
+# Training time: ~6-8 hours for 50 epochs
+# ============================================
+
+model:
+  name: 'stgcn'
+  num_classes: 15  # 7 emotions + 8 gestures
+  num_joints: 25   # Number of skeleton keypoints
+  params:
+    num_person: 1
+    in_channels: 3  # x, y, confidence
+    graph_args:
+      layout: 'mediapipe'
+      strategy: 'spatial'
+    edge_importance_weighting: true
+    dropout: 0.5
+
+# Training Configuration - OPTIMIZED FOR CPU
+training:
+  epochs: 50              # Reduced from 100 (less time)
+  batch_size: 4           # REDUCED from 32 (for 8GB RAM)
+  seed: 42
+  num_workers: 0          # MUST BE 0 for CPU training
+  pin_memory: false       # Disabled for CPU
+  
+  # Optimization
+  mixed_precision: false  # DISABLED - not supported on CPU
+  gradient_accumulation_steps: 8  # INCREASED to compensate for small batch
+  grad_clip: 1.0
+  
+  # Loss function
+  loss: 'crossentropy'
+  label_smoothing: 0.1
+  
+  # Early stopping
+  early_stopping_patience: 10  # Stop earlier to save time
+
+# Optimizer Configuration - CPU OPTIMIZED
+optimizer:
+  type: 'adam'  # Adam instead of AdamW (faster)
+  lr: 0.0005    # Slightly lower learning rate
+  weight_decay: 0.0001
+  betas: [0.9, 0.999]
+
+# Learning Rate Scheduler
+scheduler:
+  type: 'step'  # Simpler scheduler for CPU
+  step_size: 15
+  gamma: 0.5
+
+# Data Configuration
+data:
+  data_dir: 'data/processed'
+  train_split: 'train'
+  val_split: 'val'
+  test_split: 'test'
+  
+  # Data loading - OPTIMIZED FOR CPU
+  num_workers: 0          # MUST BE 0 for Windows CPU
+  prefetch_factor: null   # Disabled when num_workers=0
+  persistent_workers: false
+  
+  # Augmentation - REDUCED for faster training
+  augmentation: true
+  augmentation_prob: 0.3  # Reduced from 0.5
+  
+  # Temporal sampling - REDUCED for faster training
+  window_size: 150        # REDUCED from 300 (half the frames)
+  temporal_stride: 1
+  
+  # Classes
+  emotion_classes:
+    - 'Happy'
+    - 'Sad'
+    - 'Angry'
+    - 'Confused'
+    - 'Neutral'
+    - 'Excited'
+    - 'Fearful'
+  
+  gesture_classes:
+    - 'Waving'
+    - 'Pointing'
+    - 'Asking'
+    - 'Signaling'
+    - 'Warning'
+    - 'Greeting'
+    - 'Dismissing'
+    - 'Celebrating'
+
+# Logging Configuration
+logging:
+  log_dir: 'results/logs'
+  checkpoint_dir: 'results/checkpoints'
+  tensorboard_dir: 'results/logs/tensorboard'
+  plot_dir: 'results/plots'
+  
+  log_interval: 5         # Log more frequently
+  save_freq: 10           # Save checkpoints less frequently
+  
+  log_gradients: false
+  log_weights: false
+  log_confusion_matrix: true
+
+# Inference Configuration - CPU OPTIMIZED
+inference:
+  batch_size: 1
+  window_size: 150        # REDUCED from 300 for faster inference
+  confidence_threshold: 0.5  # Slightly lower threshold
+  device: 'cpu'           # FORCE CPU
+  
+  # Post-processing
+  temporal_smoothing: true
+  smoothing_window: 3     # Reduced from 5
+  
+  # Visualization
+  draw_skeleton: true
+  show_confidence: true
+  show_top_k: 3
+
+# Deployment Configuration
+deployment:
+  onnx_export: true
+  quantization: true
+  optimize_for_mobile: false
+  
+  # ONNX settings
+  opset_version: 14
+  dynamic_axes: true
+  
+  # Quantization settings
+  quantization_backend: 'fbgemm'  # For x86 CPU (Intel)
+
+# ============================================
+# EXPECTED PERFORMANCE ON YOUR PC:
+# - Training time: ~6-8 hours for 50 epochs
+# - Inference FPS: 3-5 FPS (real-time possible)
+# - RAM usage: ~4-5 GB
+# - Accuracy: 65-75% (due to reduced training)
+# ============================================

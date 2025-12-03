@@ -1,0 +1,31 @@
+
+FullName                                                                                                                                                                   MB
+--------                                                                                                                                                                   --
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\torch\lib\torch_cpu.dll                                                             250.49
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\jaxlib\jax_common.dll                                                               208.12
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\cv2\cv2.pyd                                                                          67.68
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\mediapipe\python\opencv_world3410.dll                                                53.32
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Scripts\ruff.exe                                                                                       37.73
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\torch\lib\torch_cpu.lib                                                              28.08
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\cv2\opencv_videoio_ffmpeg4120_64.dll                                                 27.04
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\cv2\opencv_videoio_ffmpeg4110_64.dll                                                 26.66
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\MobileNetSSD_deploy.caffemodel                                                                                22.08
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\numpy.libs\libscipy_openblas64_-13e2df515630b4a41f92893938845698.dll                 19.45
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\scipy.libs\libscipy_openblas-48c358d105077551cc9cc3ba79387ed5.dll                    19.33
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\onnxruntime\capi\onnxruntime_pybind11_state.pyd                                      18.43
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\torch\lib\torch_python.dll                                                           17.61
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\onnxruntime\capi\onnxruntime.dll                                                     14.98
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\gradio\templates\node\build\server\chunks\PlotlyPlot-D4ZO-WDo.js.map                 13.52
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\mediapipe\python\_framework_bindings.cp312-win_amd64.pyd                             10.66
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\gradio\templates\node\build\client\_app\immutable\chunks\PlotlyPlot.CUML07wO.js.map  10.44
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\gradio\templates\frontend\assets\PlotlyPlot-CeF2LyP7.js.map                          10.36
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\grpc\_cython\cygrpc.cp312-win_amd64.pyd                                               9.87
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\torch\lib\sleef.lib                                                                   8.40
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\PIL\_avif.cp312-win_amd64.pyd                                                         7.47
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\torchvision\python312.dll                                                             7.12
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\hf_xet\hf_xet.pyd                                                                     6.69
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\mediapipe\modules\pose_landmark\pose_landmark_full.tflite                             6.14
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\scipy\optimize\_highspy\_core.cp312-win_amd64.pyd                                     5.64
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\mediapipe\modules\hand_landmark\hand_landmark_full.tflite                             5.23
+S:\Everything\Clg_Project\Final_Draft\PoseGestureAnalyzer\myvenv\Lib\site-packages\pydantic_core\_pydantic_core.cp312-win_amd64.pyd                                      5.06
+

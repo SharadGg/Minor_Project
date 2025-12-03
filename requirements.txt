@@ -1,0 +1,52 @@
+# ============================================
+# REQUIREMENTS.TXT - CPU OPTIMIZED (UPDATED)
+# Based on your latest installed package versions
+# Python 3.12.10 Compatible
+# ============================================
+
+# Core Deep Learning - CPU ONLY VERSION
+torch==2.9.1
+torchvision==0.24.1
+torchaudio==2.9.1
+
+# Computer Vision & Pose Estimation
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.21
+Pillow==11.3.0
+
+# Data Processing
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.16.3
+
+# Visualization
+matplotlib==3.10.7
+seaborn==0.13.2
+tensorboard==2.20.0
+
+# Configuration & Logging
+PyYAML==6.0.3
+tqdm==4.67.1
+colorlog==6.10.1
+
+# Model Export
+onnx==1.19.1
+onnxruntime==1.23.2
+
+# Dataset Management
+kaggle==1.7.4.5
+gdown==5.2.0
+
+# Utilities
+einops==0.8.1
+h5py==3.15.1
+
+# GUI / API (You have these installed)
+gradio==5.49.1
+fastapi==0.121.2
+uvicorn==0.38.0
+
+# Additional utilities for Python 3.12 compatibility
+typing_extensions==4.15.0
+filelock==3.20.0
