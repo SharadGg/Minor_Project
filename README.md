@@ -591,6 +591,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - PyTorch and PyTorch Geometric communities
 - All open-source contributors
 
----
-
-**⭐ If you find this project useful, please consider giving it a star!**
