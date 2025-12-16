@@ -570,12 +570,6 @@ If you use this project in your research, please cite:
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -585,9 +579,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- GitHub: [@SharadGupta](https://github.com/SharadGg)
+- Email: sharadgupta.w@gmail.com
+- LinkedIn: [Sharad Gupta](https://linkedin.com/in/sharad-gupta-2234ab231)
 
 ---
 
